@@ -16,7 +16,7 @@ def create(*args):
         pos = ((randint(1,w_),randint(1,h_)),(randint(1,w_),randint(1,h_)))
         image = ImageDraw.Draw(img)
         image.line(pos,rgb())
-    img.save(f"C:\\Users\\{getlogin()}\\Desktop\\Abstract Image.png")        
+    img.save("C:\\Users\\{}\\Desktop\\Abstract Image.png".format(getlogin()))     
 
 win = Tk()
 win.title("Abstract Art Generator")
